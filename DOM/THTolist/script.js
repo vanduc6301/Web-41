@@ -20,7 +20,7 @@ const todoCreateForm = document.querySelector(".todo-form");
 //Hàm utility
 
 //hàm render
-function renderTodos(todos) {
+function renderTodos() {
   todoList.innerHTML = todos
     .map((todo) => {
       return `<li class="todo-item">
@@ -28,13 +28,25 @@ function renderTodos(todos) {
                   todo.completed ? "checked" : ""
                 }/>
                 <span class="todo-text" >${todo.text}Learn HTML</span>
-                <button class="todo-edit-button">Edit</button>
-                <button class="todo-delete-button">Delete</button>
+                <button class="todo-edit-button" data-id="${
+                  todo.id
+                }">Edit</button>
+                <button class="todo-delete-button" data-id="${
+                  todo.id
+                }">Delete</button>
                 </li>`;
     })
     .join("");
+  todoList.querySelectorAll(".todo-delete-button").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const id = button.getAttribute("data-id");
+
+      todos = todos.filter((todo) => todo.id != id);
+      renderTodos();
+    });
+  });
 }
-renderTodos(todos);
+renderTodos();
 
 //xử lý sự kiện
 // todoInput.addEventListener('input',(e) =>{
@@ -55,6 +67,6 @@ todoCreateForm.addEventListener("submit", (e) => {
     };
     todos.unshift(newTodo);
     todoInput.value = "";
-    renderTodos(todos);
+    renderTodos();
   }
 });
