@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 1400px;
+}
+.header {
+  width: 1430px;
+  position: fixed;
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.type {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.icontype img {
+  width: 32px;
+  height: 32px;
+}
+.container-1 {
+  width: 1440px;
+  height: 708px;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/bf48ed0748c75a00aaa512bb/PA7BIF1x.jpg);
+}
+.logovahome {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home {
+  color: gray;
+}
+.home:hover {
+  color: #fff;
+}
+.section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.image {
+  display: flex;
+  gap: 7px;
+}
+.freepik {
+  text-decoration: underline;
+}
+.img-header img {
+  width: 675px;
+}
+.para {
+  width: 508px;
+}
+.info {
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.online {
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.heading {
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+}
+.fromlist {
+  padding: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.from {
+  text-align: center;
+  position: relative;
+  width: 280px;
+  height: 205px;
+}
+.number {
+  font-size: 15.625rem;
+  font-weight: 900;
+  color: rgba(240, 210, 100, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.from p {
+  font-size: 20px;
+  position: relative;
+  margin: 40px auto 70px 0;
+}
+.highquality {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #333333;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+}
+.container-3 {
+  width: 1440px;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/a376d6d1490757eb8b0aa529/5ae9c49e-7cad-c9e5-2446-718a68ef0cdb.jpg);
+}
+.section-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.image-2 {
+  display: flex;
+  gap: 7px;
+  padding-top: 30px;
+}
+.freepik-2 {
+  font-weight: bold;
+}
+.img-1 img {
+  width: 708px;
+}
+.para-2 {
+  width: 508px;
+}
+.info-2 {
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.life {
+  color: #f1c50e !important;
+}
+.container-5 {
+  padding: 50px;
+}
+.img-2 img {
+  width: 337px;
+  height: 349px;
+}
+.section-5 {
+  display: flex;
+  justify-content: center;
+}
+.para-5 {
+  margin: 20px;
+  padding-top: 30px;
+  width: 708px;
+}
+.when {
+  font-size: 22px;
+  padding-bottom: 40px;
+}
+.bt:hover {
+  background-color: #fff;
+}
+.Results {
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+.info-2 p {
+  text-transform: none;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 20px 0 0;
+}
+.bt {
+  width: 200px;
+  height: 50px;
+  background-color: #f1c50e !important;
+  font-weight: bold;
+  margin-top: 40px;
+  line-height: 28px;
+  padding: 16px 18px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-4 {
+  background-position: 0% 50.8%;
+  background-size: 115%;
+  width: 1440px;
+  height: 600px;
+  background-image: url(https://images02.nicepage.com/a1389d7bc73adea1e1c1fb7e/633c94b317fb5366b354d730/pexels-photo-3906049.jpeg);
+}
+.info-3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 550px;
+  position: relative;
+  margin: 0 10%;
+  top: 5cm;
+}
+.manager {
+  text-transform: none;
+}
+.our {
+  line-height: 0.8cm;
+  text-transform: none;
+}
+.section-6 {
+  display: flex;
+  flex-direction: column;
+}
+.information {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 55px auto 0;
+}
+.sample_text {
+  text-align: center;
+  width: 430px;
+  margin: 20px auto 0;
+}
+.layout {
+  display: flex;
+  justify-content: center;
+}
+.imglayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 153px;
+}
+.imglayout img {
+  width: 116px;
+  height: 83px;
+}
+.section-7 {
+  width: 1430px;
+  background-color: black;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+.heading-7 {
+  color: gray;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 200px;
+  padding: 20px;
+}
+.heading-8 {
+  width: 1000px;
+  height: 55px;
+  display: flex;
+  bottom: 78%;
+  left: 40%;
+  right: 50%;
+  position: absolute;
+  color: #f1c50e !important;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.layout-7 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.info-7 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dot {
+  text-transform: uppercase;
+}
+.infomation-7 {
+  width: 660px;
+}
+.bi-bi-envelope {
+  color: yellow;
+}
+.from-7 {
+  padding: 5px;
+}
+.tick {
+  display: flex;
+  margin-left: 5px;
+}
+.info_ver {
+  color: blueviolet;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.info_ver:hover {
+  color: gray;
+}
+.alonesumbit {
+  width: 160px;
+  height: 50px;
+  background-color: #f1c50e !important;
+  font-weight: bold;
+  margin-top: 40px;
+  line-height: 28px;
+  padding: 16px 18px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+.alonesumbit:hover {
+  background-color: gray;
+}
+.massage {
+  color: gray;
+  background-color: black;
+  border-radius: 2px;
+  border: #fff 2px solid;
+  font-size: 16px;
+}
+.name {
+  color: gray;
+  background-color: black;
+  border-radius: 2px;
+  border: #fff 2px solid;
+  font-size: 16px;
+}
+.email {
+  color: gray;
+  background-color: black;
+  border-radius: 2px;
+  border: #fff 2px solid;
+  font-size: 16px;
+}

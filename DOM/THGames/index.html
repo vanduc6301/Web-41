@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Tenzies</h1>
+      <p class="instructions">
+        Roll until all dice are the same . Click each die to freeze it at its
+        current value between rolls
+      </p>
+      <div class="dice-state">
+        <div class="dice-count">
+          <span class="label">Roll Count</span>
+          <span class="value">---</span>
+        </div>
+        <div class="dice-time">
+          <span class="label">Roll Time</span>
+          <span class="value">---</span>
+        </div>
+        <div class="dice-best-count">
+          <span class="label">Best Count</span>
+          <span class="value">---</span>
+        </div>
+        <div class="dice-best-time">
+          <span class="label">Best Time</span>
+          <span class="value">---</span>
+        </div>
+      </div>
+      <div class="dice-container">
+        <div class="dice">2</div>
+        <div class="dice">1</div>
+        <div class="dice">3</div>
+        <div class="dice">4</div>
+        <div class="dice">6</div>
+        <div class="dice">5</div>
+        <div class="dice">2</div>
+        <div class="dice">4</div>
+        <div class="dice">6</div>
+        <div class="dice">3</div>
+      </div>
+
+      <button class="btn" id="btnStart">New Game</button>
+      <button class="btn" id="btnRoll">Roll</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

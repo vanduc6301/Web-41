@@ -1,0 +1,50 @@
+/* bọ chọn tên thẻ - tag name */
+/*  áp dụng cho tất cả thẻ h1 trong trạng thái html */
+
+div{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(205, 104, 50);
+}
+.heading1{
+    color: red;
+    background-color: green;
+    text-indent: 30px;
+    text-transform: uppercase;
+    line-height: 5px;
+
+}
+.heading2{
+    color: yellow;
+    background-color: violet;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 5px 5px 3px rgb(20, 237, 245);
+}
+
+.heading3{
+    text-decoration-line: underline;
+    text-decoration-color:rgb(red, green, blue) ;
+    text-decoration-style:solid ;
+    text-decoration-thickness:unset ;
+    /* text-decoration: underline gray solid 1px;  (dung chung cho 4 thuoc tinh tren)*/
+}
+
+.text{
+    letter-spacing: 10px;
+    word-wrap: 20px;
+    line-height: 30px;
+    white-space: inherit;
+    background-color: aqua;
+}
+.heading4{
+    border-style:solid ;
+    border-width: 3px;
+    border-color: rgb(13, 221, 51);
+    border-style: dotted solid;
+    border-bottom: 2px solid rgb(222, 219, 21);
+    border-radius: 10px;/*bo vien*/
+    background-image: url(../images/anh-1-bt2.png);
+    color: aliceblue;
+    background-position: 50px 25px;
+}

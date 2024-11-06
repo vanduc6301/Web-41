@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-botton {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(189, 220, 221);
+  border-radius: 50%;
+  cursor: pointer; /* thay ddooir khi tro vao icon */
+}
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.dropdown-item {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(13, 225, 240);
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+.dropdown.placement-br .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.header {
+  background-color: #30598c;
+  padding: 8px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+.header-wapper {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.nav-dropdown{
+    position: relative;
+    color: #fff;
+    display: inline-block;
+}
+.nav-dropdown-menu{
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    display: flex;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0)0.2;
+}
+.nav-link,
+.nav-dropdownlink{
+    height: 32px;
+    line-height: 32px;
+}
+.nav-dropdown-item{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 8px 10px;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu{
+    display: flex;
+}
+.nav-dropdown-item:hover{
+    background-color: rgb(13, 225, 240);
+}  
+.nav-link{
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}

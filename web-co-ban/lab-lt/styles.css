@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav a {
+  text-decoration: none;
+  color: blueviolet;
+  background-color: rgb(210, 237, 221);
+  padding: 6px 12px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

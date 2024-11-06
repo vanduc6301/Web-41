@@ -1,0 +1,85 @@
+/* Ap dung cho tat ca phan tu */
+.header {
+  background-color: brown;
+}
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.products-card {
+  /* ap dung cho content-box */
+  width: 200px;
+  height: 300px;
+  background-color: burlywood;
+  padding: 15px;
+  border: 1px solid gray;
+  margin-left: 30px;
+}
+/* content-box */
+/* padding-box */
+/* boder-box    (width ; height) */
+/* a */
+/* display: inline; thay doi cach hien thi boder hoat dong */
+/* display: block; */
+/* display: none;ẩn thẻ */
+/* display: inline-block; */
+/* cho phép phần tử có thể aps dụng các thuộc tính box model( vẫn có 1 số hạn chế ) */
+/* Nhưng vẫn nằm trên cùng 1 dòng */
+/* width: 300px; */
+/* height: 300px; */
+/* Trước khi code- xác định được khi code cần có những gì đó là khung nội dung  */
+/* card bài viết
+    -ảnh
+    -thông tin về bài viết
+        -tiêu đề
+        -mô tả ngắn */
+
+* {
+  /* box-sizing: border-box */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.post-card {
+  width: 320px;
+  height: 459px;
+  background-color: #fdfdfd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.26);
+  border-radius: 20px;
+}
+.post-card img {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0px 0px;
+}
+.post-info {
+  padding: 30px;
+}
+.post-bottun {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.689);
+  color: aliceblue;
+  border-radius: 9px;
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px;
+}
+.post-excerpt {
+  color: rgba(4, 6, 9, 0.56);
+  padding-top: 20px;
+}
+.post-list {
+  display: flex;
+  gap: 10px;
+}
+.head {
+  color: rebeccapurple;
+  text-align: center;
+  background-color: aqua;
+  border: 2px solid yellowgreen;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+}

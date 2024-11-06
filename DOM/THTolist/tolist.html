@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ung dung Todo list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-app">
+      <h1 class="todo-app-title">Simple TodoApp</h1>
+
+      <form action="" class="todo-form">
+        <input
+          type="text"
+          class="todo-input"
+          placeholder="what's you want todo"
+        />
+        <button type="sumbit" class="todo-create-button">Create</button>
+      </form>
+
+      <form action="" class="todo-filter-form">
+        <input type="radio" name="filter" id="all" value="all" checked />
+        <label for="all"> All</label>
+        <input type="radio" name="filter" id="active" value="active" />
+        <label for="active">Active</label>
+        <input type="radio" name="filter" id=" completed" value="completed" />
+        <label for="completed">Completed</label>
+      </form>
+
+      <ul class="todo-list"></ul>
+
+      <div class="todo-footer">
+        <span class="todo-count">2 items left</span>
+        <button class="todo-clear-button">Clear Completed</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

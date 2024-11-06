@@ -1,0 +1,103 @@
+.container {
+  font-size: 20px;
+  background-color: yellow;
+  border: 3px solid gray;
+  padding: 10px;
+}
+.item {
+  background-color: aqua;
+  border: 2px solid red;
+}
+/* .item--fixed {
+  /* kích thước mặc định bằng với nội dung  */
+  /*  các phần từ xung quanh coi như k tồn tại  */
+  /* position: fixed; */
+  /* Định vị phần tử theo khung của trình duyệt */
+
+
+  /* border-radius: 40%; */
+
+.icon {
+  position: fixed;
+  background-color: aqua;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 70px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item--relative{
+    /* tạo mốc cho các phần tử con(absolute) căn theo  */
+    position: relative;
+    padding: 10px;
+}
+.item--absolute{
+    /* Căn theo phần tử cha gần nhất có position khác static */
+    /* Trong trường hợp k có căn theo khung trình duyệt */
+    background-color: rgb(232, 14, 213);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+body{
+    height: 1000px;
+}
+
+.movie-card{
+    position: relative;
+    width: 350px;
+    display: block;
+}
+.tap-phim{
+    top: 10px;
+    position: absolute;
+    background-color: bisque;
+    border-radius: 3px;
+}
+.trending{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.movie-info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap :20px;
+}
+.sticky-container{
+    height: 10000px;
+    background-color: aquamarine;
+    display: flex;
+}
+.item-sticky,
+.content{
+    width: 50%;
+}
+.blank{
+    height: 5000px;
+}
+.item-sticky{
+    background-color: bisque;
+    height: 400px;
+    position: sticky;
+    top: 50px;
+    left: 0;
+}
