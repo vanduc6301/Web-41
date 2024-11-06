@@ -17,6 +17,7 @@ let todos = [
 const todoInput = document.querySelector(".todo-input");
 const todoList = document.querySelector(".todo-list");
 const todoCreateForm = document.querySelector(".todo-form");
+const todoCount = document.querySelector(".todo-count");
 //Hàm utility
 
 //hàm render
@@ -24,7 +25,7 @@ function renderTodos() {
   todoList.innerHTML = todos
     .map((todo) => {
       return `<li class="todo-item">
-                <input type="checkbox" class="todo-checkbox" checked ${
+                <input type="checkbox" class="todo-checkbox"${
                   todo.completed ? "checked" : ""
                 }/>
                 <span class="todo-text" >${todo.text}Learn HTML</span>
@@ -45,6 +46,15 @@ function renderTodos() {
       renderTodos();
     });
   });
+
+  const count = (todoCount.textContent = todos.filter(
+    (todo) => !todo.completed
+  ).length);
+  if (count == 0) {
+    todoCount.innerHTML = "no task left";
+  } else {
+    todoCount.innerHTML = `${count} task left`;
+  }
 }
 renderTodos();
 
