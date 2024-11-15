@@ -1,42 +1,42 @@
 //Dữ liệu ban đầu
 const songs = [
   {
-    file: "HoangHonNhoSong24-AnhTuAtusGiGiHuongGiang.mp3",
+    file: "music/HoangHonNhoSong24-AnhTuAtusGiGiHuongGiang.mp3",
     name: "Hoàng Hôn Nhớ ",
     artist: "Anh Tú - Hương Giang",
   },
   {
-    file: "ChungTaCuaHienTai-SonTungMTP.mp3",
+    file: "music/ChungTaCuaHienTai-SonTungMTP.mp3",
     name: "Chúng ta của hiện tại ",
     artist: "Sơn Tùng",
   },
   {
-    file: "KhoVeNuCuoi-DatGDuUyen.mp3",
+    file: "music/KhoVeNuCuoi-DatGDuUyen.mp3",
     name: "Khó Vẽ Nụ Cười ",
     artist: " Đạt G - Du Uyên",
   },
   {
-    file: "SauLoiTuKhuocThemeSongFromMAI-PhanManhQuynh.mp3",
+    file: "music/SauLoiTuKhuocThemeSongFromMAI-PhanManhQuynh.mp3",
     name: "Sau Lời Từ Khước ",
     artist: "Phan Mạnh Quỳnh",
   },
   {
-    file: "SuytNuaThi-Andiez.mp3",
+    file: "music/SuytNuaThi-Andiez.mp3",
     name: "Suýt Nữa Thì ",
     artist: "Andiez",
   },
   {
-    file: "ThienLyOi-JackJ97.mp3",
+    file: "music/ThienLyOi-JackJ97.mp3",
     name: " Thiên Lý Ơi",
     artist: "JackJ97",
   },
   {
-    file: "TungLa-VuCatTuong.mp3",
+    file: "music/TungLa-VuCatTuong.mp3",
     name: " Từng Là ",
     artist: "Vũ Cát Tường",
   },
   {
-    file: "YeuEmRatNhieu-HoangTon.mp3",
+    file: "music/YeuEmRatNhieu-HoangTon.mp3",
     name: " Yêu Em Rất Nhiều",
     artist: "Hoàng Tôn",
   },
