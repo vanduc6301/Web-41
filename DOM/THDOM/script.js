@@ -4,6 +4,7 @@ const songs = [
     file: "music/HoangHonNhoSong24-AnhTuAtusGiGiHuongGiang.mp3",
     name: "Hoàng Hôn Nhớ ",
     artist: "Anh Tú - Hương Giang",
+    img: "images/chungtacuahientai.jpg",
   },
   {
     file: "music/ChungTaCuaHienTai-SonTungMTP.mp3",
@@ -60,12 +61,14 @@ const btnReset = document.querySelector("#btnReset");
 let songStatus = 0;
 let isRepeat = false;
 const listMusic = document.querySelector("#btn-list-music");
+const songImage = document.querySelector(".box-dish img");
 // ham cap nhat / hien thi du lieu len Dom
 function setSong(song) {
   audio.src = song.file;
   audio.load();
   songName.textContent = song.name;
   songArtist.textContent = song.artist;
+  // songImage.src = song.image;
 }
 
 //cap nhat hien thi lan dau
@@ -79,24 +82,28 @@ setSong(songs[curentSongIndex]);
 btnPlay.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
+    songImage.classList.add("playing");
   } else {
     audio.pause();
+    songImage.classList.remove("playing");
   }
 });
 
 audio.addEventListener("play", () => {
   btnPlay.classList.add("playing");
+  songImage.classList.add("playing");
 });
 
 audio.addEventListener("pause", () => {
   btnPlay.classList.remove("playing");
+  songImage.classList.remove("playing");
 });
 
 audio.addEventListener("loadedmetadata", () => {
   cuarationTime.textContent = formatTime(0);
   duration.max = audio.duration;
   duration.value = 0;
-  cuarationTime.textContent = formatTime(audio.duration);
+  duarationTotal.textContent = formatTime(audio.duration);
   volume.value = audio.volume;
 });
 audio.addEventListener("timeupdate", () => {
@@ -185,7 +192,21 @@ btnReset.addEventListener("click", () => {
   if (isRepeat) isRepeat = false;
   else isRepeat = true;
 });
+// function loadPlaylist() {
+//   songs.forEach((song, index) => {
+//     const li = document.createElement("li");
+//     li.textContent = `${song.name} - ${song.artist}`;
+//     li.addEventListener("click", () => {
+//       curentSongIndex = index;
+//       setSong(songs[curentSongIndex]);
+//       audio.play();
+//     });
+//     listMusic.appendChild(li);
+//   });
+// }
+// loadPlaylist();
 function loadPlaylist() {
+  const musicList = document.getElementById("music-list");
   songs.forEach((song, index) => {
     const li = document.createElement("li");
     li.textContent = `${song.name} - ${song.artist}`;
@@ -194,7 +215,15 @@ function loadPlaylist() {
       setSong(songs[curentSongIndex]);
       audio.play();
     });
-    listMusic.appendChild(li);
+    musicList.appendChild(li);
   });
 }
 loadPlaylist();
+
+// Ẩn/Hiện danh sách bài hát
+const btnListMusic = document.getElementById("btn-list-music");
+const musicList = document.getElementById("music-list");
+
+btnListMusic.addEventListener("click", () => {
+  musicList.classList.toggle("show");
+})

@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="music.html" /> -->
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Nhập tên bài hát, ca sĩ..."
+            id="searchBar"
+          />
+          <button class="search-button" id="searchButton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
       <div class="player">
         <div class="player_cover">
           <div class="player_song">
@@ -20,8 +46,8 @@
               ></div>
               <div class="box-dish">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPJ-rmwOndd4v58qFJ06knkS_JzfzHkSs6Q&s"
-                  alt="anh tu"
+                  src="https://static-00.iconduck.com/assets.00/youtube-to-mp3-icon-2047x2048-g0c462si.png"
+                  alt="mac dinh"
                 />
               </div>
             </div>
@@ -135,10 +161,7 @@
             <path d="M16 6H3" />
             <path d="M12 18H3" />
           </svg>
-          <div class="music-list">
-            <ul id="music-list"></ul>
-            <li></li>
-          </div>
+          <ul class="music-list" id="music-list"></ul>
         </button>
       </div>
       <div class="player_duration">

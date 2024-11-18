@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnRoll.style.display = "none";
       clearInterval(timer);
       playWinSound();
+      launchFireworks();
       // animate();
       if (!bestRoll || rollCount < bestRoll) {
         bestRoll = rollCount;
@@ -78,6 +79,28 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("bestTime", bestTime);
       }
     }
+  }
+  function launchFireworks() {
+    tsParticles.load("tsparticles-container", {
+      fullScreen: { enable: true },
+      particles: {
+        number: { value: 0 },
+        shape: { type: "circle" },
+        size: { value: 3 },
+        move: {
+          enable: true,
+          speed: 5,
+          direction: "none",
+          outModes: { default: "destroy" },
+        },
+      },
+      emitters: {
+        direction: "top",
+        rate: { quantity: 5, delay: 0.1 },
+        size: { width: 100, height: 10 },
+        position: { x: 50, y: 50 },
+      },
+    });
   }
   //Âm thanh khi win (hiệu ứng)
   function playWinSound() {

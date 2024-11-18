@@ -11,7 +11,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(51, 50, 50);
+  background-image: url(https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover; /* Đảm bảo ảnh phủ kín toàn bộ màn hình */
+  background-position: center; /* căn giữa ảnh */
+  background-repeat: no-repeat; /* không lặp lại ảnh */
+  margin: 0;
+  padding: 0;
 }
 .list-music {
   display: none;
@@ -50,10 +55,13 @@ body {
   height: 600px;
   width: 320px;
   border-radius: 40px;
-  background: linear-gradient(to bottom, #33383e 0%, #17191d 100%);
   margin: 0 auto;
   display: block;
   border: solid 2px #3e434c;
+  background-image: url(https://images.pexels.com/photos/3771842/pexels-photo-3771842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover; /* Đảm bảo ảnh phủ kín toàn bộ màn hình */
+  background-position: center; /* căn giữa ảnh */
+  background-repeat: no-repeat; /* không lặp lại ảnh */
 }
 .player {
   display: flex;
@@ -81,13 +89,7 @@ body {
   text-transform: capitalize;
   font-size: 24px;
 }
-.player_controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  padding: 20px;
-}
+
 .player_volume {
   text-align: center;
   padding: 20px;
@@ -96,9 +98,7 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
-  display: block;
   margin: 20px auto 20px;
-  animation: rotate 20s linear infinite;
   background-size: cover;
   background-position: center;
 }
@@ -106,17 +106,14 @@ img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  position: relative;
-  display: block;
-  margin: 40px auto;
   animation: rotate 20s linear infinite;
-  background-size: cover;
-  background-position: center;
+  animation-play-state: paused;
 }
-button:hover {
-  cursor: pointer;
-  background-color: rgb(245, 245, 245);
+
+img.playing {
+  animation-play-state: running;
 }
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -124,4 +121,121 @@ button:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+.music-list {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #3e434c;
+  background-color: #222;
+  border-radius: 8px;
+}
+
+.music-list li {
+  padding: 10px;
+  color: #eee;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+
+.music-list li:hover {
+  background-color: #333;
+}
+
+.music-list li:last-child {
+  border-bottom: none;
+}
+
+.music-list.show {
+  display: block;
+}
+
+#btn-list-music {
+  position: relative;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #3e434c;
+  border-radius: 20px;
+  background-color: #2f343b;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.search-button svg {
+  stroke: #ffffff;
+}
+
+.player_controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+.player_controls button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 6px 6px;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+}
+
+.player_controlshover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.player_volume button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 6px 6px;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
 }
