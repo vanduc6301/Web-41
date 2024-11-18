@@ -102,12 +102,12 @@ body {
   background-size: cover;
   background-position: center;
 }
-img {
-  border-radius: 50%;
+.box-dish {
   width: 200px;
-  height: 200px;
-  animation: rotate 20s linear infinite;
-  animation-play-state: paused;
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px; 
 }
 
 img.playing {

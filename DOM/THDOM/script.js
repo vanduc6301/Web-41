@@ -4,42 +4,49 @@ const songs = [
     file: "music/HoangHonNhoSong24-AnhTuAtusGiGiHuongGiang.mp3",
     name: "Hoàng Hôn Nhớ ",
     artist: "Anh Tú - Hương Giang",
-    img: "images/chungtacuahientai.jpg",
+    img: "images/hoanghonnho.jpg",
   },
   {
     file: "music/ChungTaCuaHienTai-SonTungMTP.mp3",
     name: "Chúng ta của hiện tại ",
     artist: "Sơn Tùng",
+    img: "images/chungtacuahientai.jpg",
   },
   {
     file: "music/KhoVeNuCuoi-DatGDuUyen.mp3",
     name: "Khó Vẽ Nụ Cười ",
     artist: " Đạt G - Du Uyên",
+    img: "images/khovenucuoi.jpg",
   },
   {
     file: "music/SauLoiTuKhuocThemeSongFromMAI-PhanManhQuynh.mp3",
     name: "Sau Lời Từ Khước ",
     artist: "Phan Mạnh Quỳnh",
+    img: "images/sauloitukhuoc.jpg",
   },
   {
     file: "music/SuytNuaThi-Andiez.mp3",
     name: "Suýt Nữa Thì ",
     artist: "Andiez",
+    img: "images/suytnuathi.jpg",
   },
   {
     file: "music/ThienLyOi-JackJ97.mp3",
     name: " Thiên Lý Ơi",
     artist: "JackJ97",
+    img: "images/thienlyoi.jpg",
   },
   {
     file: "music/TungLa-VuCatTuong.mp3",
     name: " Từng Là ",
     artist: "Vũ Cát Tường",
+    img: "images/tungla.jpg",
   },
   {
     file: "music/YeuEmRatNhieu-HoangTon.mp3",
     name: " Yêu Em Rất Nhiều",
     artist: "Hoàng Tôn",
+    img: "images/yeuemratnhieu.jpg",
   },
 ];
 
@@ -61,14 +68,17 @@ const btnReset = document.querySelector("#btnReset");
 let songStatus = 0;
 let isRepeat = false;
 const listMusic = document.querySelector("#btn-list-music");
-const songImage = document.querySelector(".box-dish img");
+const songImage = document.querySelector(".box-dish");
 // ham cap nhat / hien thi du lieu len Dom
 function setSong(song) {
   audio.src = song.file;
   audio.load();
   songName.textContent = song.name;
   songArtist.textContent = song.artist;
-  // songImage.src = song.image;
+  // songImage. = song.;
+    if (songImage) {
+    songImage.style.backgroundImage = `url(${song.img})`; // Thay đổi ảnh nền
+  }
 }
 
 //cap nhat hien thi lan dau
@@ -226,4 +236,4 @@ const musicList = document.getElementById("music-list");
 
 btnListMusic.addEventListener("click", () => {
   musicList.classList.toggle("show");
-})
+});
