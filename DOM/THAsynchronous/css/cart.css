@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.cart-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-main {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding-top: 40px;
+}
+
+.cart-body {
+  padding: 20px;
+}
+
+.cart-empty {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+.cart-footer {
+  margin-top: 20px;
+
+  margin-top: 20px;
+  text-align: right; /* Căn toàn bộ nội dung về phía bên phải */
+  padding-right: 20px; /* Thêm khoảng cách giữa nội dung và viền bên phải */
+}
+.cart-item,
+.cart-item-info {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.cart-item-remove-button {
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #f8eedb);
+  border: 0 solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #482307;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1),
+    0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+.cart-item-quantity {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+}
+
+.cart-item-quantity button {
+  width: 30px; /* Độ rộng nút giảm/tăng */
+  height: 30px; /* Chiều cao nút giảm/tăng */
+  background-color: #f8f9fa; /* Màu nền */
+  border: 1px solid #ddd; /* Đường viền nút */
+  border-radius: 4px; /* Bo tròn góc nút */
+  cursor: pointer; /* Con trỏ thay đổi khi hover */
+  font-size: 18px; 
+  font-weight: bold; /* Đậm chữ */
+  text-align: center;
+  color: #333; 
+}
+
+.cart-item-quantity button:hover {
+  background-color: #e9ecef; /* Màu nền khi hover */
+}
+
+.cart-item-quantity input {
+  width: 50px; /* Độ rộng của ô nhập */
+  height: 30px; /* Chiều cao của ô nhập */
+  text-align: center; /* Căn chữ giữa */
+  border: 1px solid #ddd; /* Đường viền */
+  border-radius: 4px; /* Bo tròn góc */
+  background-color: #fff; /* Màu nền */
+  color: #333; /* Màu chữ */
+  font-size: 16px; /* Kích thước chữ */
+}
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.cart-item-title {
+  font-size: 16px;
+}
+.cart-item-price {
+  font-size: 18px;
+}
+
+.button-83:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+    0px 1px 1px rgba(81, 41, 10, 0.15);
+  transform: translateY(0.125rem);
+}
+
+.button-83:focus {
+  box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
+    -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+.cart-subtotal,
+.cart-discount,
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-subtotal-title,
+.cart-discount-title,
+.cart-total-title {
+  font-size: 16px;
+  color: #555;
+}
+
+.cart-total-title {
+  font-weight: bold;
+}
+
+.cart-subtotal-price,
+.cart-discount-price,
+.cart-total-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.cart-clear-button,
+.cart-checkout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.cart-clear-button {
+  background-color: #dc3545;
+}
+
+.cart-clear-button:hover {
+  background-color: #c82333;
+}
+
+.cart-checkout-button {
+  background-color: #28a745;
+}
+
+.cart-checkout-button:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <script src="pristine.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form class="singup-form">
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          autocomplete="off"
+          type="email"
+          name="email"
+          required
+          id="email"
+          data-pristine-required-message=" Vui long nhap lai email"
+          data-pristine-email-message="Email khong hop le "
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="password"> Password</label>
+        <input
+          type="password"
+          name="password"
+          required
+          minlength="6"
+          maxlength="20"
+          id="password"
+          data-pristine-required-message=" Vui long nhap mat khau"
+          data-pristine-maxLength-message=" Password khong vuot qua 20 ky tu"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="confirm"> Confrim password</label>
+        <input
+          type="password"
+          name="confirm"
+          required
+          id="confirm"
+          data-pristine-equals="#password"
+          data-pristine-required-message=" Vui long xac nhan mat khau"
+          data-pristine-equals-message=" xac nhan mat khau trung khop"
+        />
+      </div>
+
+      <button>Dang Nhap</button>
+    </form>
+  </body>
+</html>

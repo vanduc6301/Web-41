@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: auto;
+  padding: 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.search-box {
+  position: relative;
+  width: 450px; /* Điều chỉnh độ rộng của input */
+}
+
+.search-box svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: gray;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Chừa khoảng trống bên trái cho icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.cart {
+  width: 300px; /* Điều chỉnh kích thước thẻ */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #f0f0f0;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+  background-color: rgb(212, 231, 185);
+}
+.cart-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.serialNumber {
+  font-size: 20px;
+  color: rgb(31, 29, 29);
+}
+
+.namePokemon {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.type1,
+.type2 {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.type1 {
+  background-color: rgb(112, 142, 66); /* Màu đại diện cho hệ đầu tiên */
+  margin-right: 10px;
+}
+
+.type2 {
+  background-color: #a235c3; /* Màu đại diện cho hệ thứ hai */
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}

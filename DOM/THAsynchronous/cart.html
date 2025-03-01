@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="icon">
+        <img
+          src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-shop-store-icon-png-image_3563809.jpg"
+          alt=""
+        />
+      </div>
+      <div class="search">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="
+            Nhập tên đồ dùng muốn mua ..."
+          id="searchBar"
+        />
+      </div>
+      <div class="information">
+        <a class="page" href="index.html"> Trang Chủ</a>
+        <a class="client" href=""> Khách Hàng</a>
+        <a class="list-price" href=""> Bảng Giá</a>
+        <a class="contact" href=""> Liên Hệ</a>
+      </div>
+      <div class="acc-button">
+        <a class="accout" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-user-round"
+          >
+            <path d="M18 20a6 6 0 0 0-12 0" />
+            <circle cx="12" cy="10" r="4" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </a>
+        <a class="cart" href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+          <span class="quantity"></span>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="cart-container">
+          <div class="cart-main">
+            <h1 class="cart-title">Your shopping cart</h1>
+          </div>
+          <div class="cart-body">
+            <div class="cart-empty">
+              <p>Your cart is empty</p>
+            </div>
+
+            <div class="cart-info">
+              <div class="cart-list"></div>
+
+              <div class="cart-footer">
+                <div class="cart-subtotal">
+                  <span class="cart-subtotal-title">Sub Total:</span>
+                  <span class="cart-subtotal-price">$999</span>
+                </div>
+                <div class="cart-discount">
+                  <span class="cart-discount-title">Discount:</span>
+                  <span class="cart-discount-price">$111</span>
+                </div>
+                <div class="cart-total">
+                  <span class="cart-total-title">Total:</span>
+                  <span class="cart-total-price">$888</span>
+                </div>
+
+                <div class="cart-actions">
+                  <button class="cart-clear-button">Clear cart</button>
+                  <button class="cart-checkout-button">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="line">
+          <div class="row">
+            <div class="row-1">
+              <div class="row-info">
+                <h2 class="footer-heading">Shopping.com</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="row-2">
+              <div class="discover">
+                <h2 class="footer-heading">Discover</h2>
+                <ul class="list-row">
+                  <li>
+                    <a href="#">Buy & Sell</a>
+                  </li>
+                  <li>
+                    <a href="#">Merchant</a>
+                  </li>
+                  <li>
+                    <a href="#">Giver Black</a>
+                  </li>
+                  <li>
+                    <a href="#">Help & Support</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="about">
+                <h2 class="footer-heading">About</h2>
+                <ul class="list-row">
+                  <li><a href="#">Staff</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Carrrs</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="resources">
+                <h2 class="footer-heading">Resources</h2>
+                <ul class="list-row">
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Global</a></li>
+                  <li><a href="#">Charts</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </ul>
+              </div>
+              <div class="social">
+                <h2 class="footer-heading">Social</h2>
+                <ul class="list-row">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">GoolePlus</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/types.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

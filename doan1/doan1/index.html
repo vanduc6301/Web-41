@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>complete responsive food website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="vd1.html" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+
+      <div class="">
+        <form class="" id="searchForm">
+          <input
+            class="search-container"
+            type="text"
+            placeholder="Tìm kiếm món ăn bạn muốn ..................................."
+            name="search"
+            id="search "
+          />
+        </form>
+      </div>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#popular">Món chính</a>
+        <a href="#gallery">Thực đơn</a>
+        <a href="#review">Đánh giá</a>
+        <a href="#order">Phản hồi</a>
+      </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>CÁC MÓN CANH CHUA CÁ</h3>
+        <p>
+          Những bữa cơm ngon và đầy đủ chắc chắn sẽ chẳng thể nào thiếu được 1
+          tô canh nóng hổi, bỏ túi ngay các cách nấu canh chua cá hấp dẫn để
+          thực hiện và thưởng thức cùng gia đình.
+        </p>
+        <div class="chinh">
+          <a
+            class="btn"
+            onmouseover="loadInfo(this, 'cabasa.html')"
+            onmouseout="hideInfo(this)"
+            >Canh chua cá basa
+            <span class="tooltip"></span>
+          </a>
+          <a
+            class="btn"
+            onmouseover="loadInfo(this, 'caloc.html')"
+            onmouseout="hideInfo(this)"
+            >Canh chua cá lóc
+            <span class="tooltip"></span>
+          </a>
+          <a
+            class="btn"
+            onmouseover="loadInfo(this, 'cahoi.html')"
+            onmouseout="hideInfo(this)"
+            >Canh chua cá hồi
+            <span class="tooltip"></span>
+          </a>
+          <a
+            class="btn"
+            onmouseover="loadInfo(this, 'cachep.html')"
+            onmouseout="hideInfo(this)"
+            >Canh chua cá chép
+            <span class="tooltip"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="image/anh chính.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- speciality section ends -->
+
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+      <h1 class="heading"><span>các món chính </span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <!--<span class="price">45-50k </span>-->
+          <img src="image/canh chua ca lăng.jpg" alt="" />
+          <h3>canh chua cá lăng</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="calang.html" class="btn">công thức</a>
+        </div>
+        <div class="box">
+          <!--<span class="price"> $5 - $20 </span>-->
+          <img src="image/canh chua cá rô.jpg" alt="" />
+          <h3>canh chua cá rô</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="caro.html" class="btn">công thức</a>
+        </div>
+        <div class="box">
+          <!--<span class="price"> $5 - $20 </span>-->
+          <img src="image/canh chua cá trắm.jpg" alt="" />
+          <h3>canh chua cá trắm</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="catram.html" class="btn">công thức</a>
+        </div>
+        <div class="box">
+          <!--<span class="price"> $5 - $20 </span>-->
+          <img src="image/canh chua cá tầm.jpg" alt="" />
+          <h3>canh chua cá tầm</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">công thức</a>
+        </div>
+        <div class="box">
+          <!--<span class="price"> $5 - $20 </span>-->
+          <img src="image/canh chua cá chép.jpg" alt="" />
+          <h3>canh chua cá chép</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="cachep.html" class="btn">công thức</a>
+        </div>
+        <div class="box">
+          <!--<span class="price"> $5 - $20 </span>-->
+          <img src="image/canh chua cá đuối.jpg" alt="" />
+          <h3>canh chua cá đuối</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">công thức</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular section ends -->
+
+    <!-- steps section starts  -->
+
+    <div class="step-container">
+      <h1 class="heading"><span>cách làm việc</span></h1>
+
+      <section class="steps">
+        <div class="box">
+          <img src="image/chonmon.png" alt="" />
+          <h3>chọn món ăn yêu thích</h3>
+        </div>
+        <div class="box">
+          <img src="image/giaohang.jpg" alt="" />
+          <h3>giao hàng miễn phí và nhanh chóng</h3>
+        </div>
+        <div class="box">
+          <img src="image/phuong thuc tt.png" alt="" />
+          <h3>phương thức thanh toán dễ dàng</h3>
+        </div>
+        <div class="box">
+          <img src="image/ttmonan.jpg" alt="" />
+          <h3>thưởng thức món ăn của bạn</h3>
+        </div>
+      </section>
+    </div>
+
+    <!-- steps section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading"><span> Thực đơn</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/canh chua cá lóc.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá lóc</h3>
+            <p>
+              Canh chua cá lóc là món ăn dân dã, dễ ăn, dễ ghiền khiến ai đã ăn
+              đều phải tấm tắc khen ngon
+            </p>
+            <a href="caloc.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá hồi.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá hồi</h3>
+            <p>
+              món canh chua đầu cá hồi măng chua vô cùng hấp dẫn mà cả nhà đều
+              yêu thích. Cùng vào bếp và thực hiện ngay thôi
+            </p>
+            <a href="cahoi.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá hú.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá hú</h3>
+            <p>
+              vào bếp trổ tài nấu ngay món canh chua cá hú chuẩn vị miền Tây làm
+              siêu đơn giản cho cả gia đình ngay thôi
+            </p>
+            <a href="cahu.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá bớp.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá bớp</h3>
+            <p>
+              canh chua cá bớp thanh mát thơm ngon đơn giản ai cũng làm được này
+              nhé
+            </p>
+            <a href="cabop.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá basa.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá basa</h3>
+            <p>
+              Canh chua cá basa với hương vị mang đậm tính miền quê, chua ngọt
+              thích hợp cho các buổi trưa hè nắng nóng
+            </p>
+            <a href="cabasa.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá linh.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá linh</h3>
+            <p>
+              Canh chua với cá linh là món ăn mang đậm nét đặc trưng của miền
+              Tây sông nước
+            </p>
+            <a href="calinh.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá kèo.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá kèo</h3>
+            <p>
+              Canh chua là một món ăn thơm ngon, hấp dẫn canh chua cá kèo thơm
+              ngon cho bữa ăn của gia đình thêm phong phú
+            </p>
+            <a href="cakeo.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá thu.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá thu</h3>
+            <p>
+              Canh chua cá thu là món canh rất ưa chuộng bởi hương vị đậm đà đặc
+              trưng, vừa dân dã mà cũng tươi mới đa dạng
+            </p>
+            <a href="cathu.html" class="btn">công thức</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="image/canh chua cá mú.jpg" alt="" />
+          <div class="content">
+            <h3>canh chua cá mú</h3>
+            <p>
+              Cá mú khi kết hợp với canh chua tạo nên một món ăn đậm đà, hấp
+              dẫn, giúp bữa ăn gia đình thêm tròn vị
+            </p>
+            <a href="camu.html" class="btn">công thức</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading"><span>đánh giá món ăn</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/pic1.png" alt="" />
+          <h3>Mrs.Hoa</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Chất lượng dịch vụ tuyệt vời, thực đơn có rất nhiều sự lựa chọn cho
+            các món canh Chất lượng món ăn và cách chế biến vô cùng sáng tạo
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/pic2.png" alt="" />
+          <h3>Mr.Hiếu</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Chúng tôi đã ăn rất nhiều món canh nên đã biết đến và thử nhiều món
+            canh ở nhiều nơi khác nhau có rất nhiều sự lựa chọn nhưng tôi đã
+            chọn canh chua cá lăng
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/pic3.png" alt="" />
+          <h3>Mrs.Mai</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            Các món ăn sáng tạo ngon miệng và rất hợp khẩu vị .Đây chính là điều
+            đặc biệt mà không thể tìm thấy ở những nơi nào khác món ăn độc đáo
+            và trang trí rất đẹp mắt
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+      <h1 class="heading"><span>phản hồi của khách hàng</span></h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="image/phan-hoi-cua-khach-hang-1.png" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="Họ và tên" />
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="inputBox">
+            <input type="number" placeholder="SĐT" />
+            <input type="text" placeholder="Tên món ăn" />
+          </div>
+
+          <textarea
+            placeholder="Địa chỉ"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <input type="submit" value="phản hồi" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      <div class="share">
+        <a href="https://www.facebook.com/" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">zalo</a>
+        <a href="#" class="btn">tiktok</a>
+      </div>
+      <!-- <h1 class="credit"> created by <span> mr. web designer </span> | all rights reserved! </h1>-->
+    </section>
+
+    <!-- scroll top button  -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- loader  -->
+    <!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div>
+
+ -->
+    <!-- custom js file link  -->
+    <script src="./script.js"></script>
+  </body>
+</html>

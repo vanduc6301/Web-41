@@ -1,0 +1,4 @@
+Lưu ý khi sư dụng components:
+- cấu trúc html
+-các thuộc tính đăc biệt là data-bs phải được liên kết với nhau 
+- Class của html phải được giữ nguyên

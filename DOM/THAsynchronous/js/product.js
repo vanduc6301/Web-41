@@ -1,15 +1,24 @@
 //Dữ liệu
 /**
+ * @typedef {Product}
+ */
+let product;
+/**
  * @returns {Promise<Product>}
  */
 function getProductInfor(id) {
-  return fetch("https://dummyjson.com/products/" + id).then((res) => {
-    if (!res.ok) {
-      throw res;
-    } else {
-      return res.json();
-    }
-  });
+  return fetch("https://dummyjson.com/products/" + id)
+    .then((res) => {
+      if (!res.ok) {
+        throw res;
+      } else {
+        return res.json();
+      }
+    })
+    .then((json) => {
+      product = json;
+      return product;
+    });
 }
 //Query element(truy vấn phần tử)
 const productInfor = document.querySelector(".product-infor");
@@ -22,6 +31,10 @@ const productDescription = document.querySelector(".product-description");
 const productRating = document.querySelector(".product-rating");
 const productPrice = document.querySelector(".product-price");
 const producDiscountPrice = document.querySelector(".product-discount-price");
+const productNumber = document.querySelector(".number");
+const productReduce = document.querySelector(".add-reduce");
+const productIncrease = document.querySelector(".add-increase");
+const productAddcart = document.querySelector(".add-cart");
 //Render(Hiển thị dữ liệu)
 function formatPrice(price) {
   return new Intl.NumberFormat("en-US", {
@@ -40,8 +53,7 @@ function showProducts() {
   productError.style.display = "none";
   productWarpper.style.display = "block";
 }
-function showError(error) {
-  console.log(error);
+function showError() {
   productLoading.style.display = "none";
   productError.style.display = "block";
   productWarpper.style.display = "none";
@@ -63,6 +75,18 @@ function renderProducts(product) {
   productDescription.textContent = product.description;
 }
 //Event
+function setupQuantily() {
+  productReduce.addEventListener("click", () => {
+    if (Number(productNumber.value) > 1) {
+      productNumber.value = Number(productNumber.value) - 1;
+    }
+  });
+  productIncrease.addEventListener("click", () => {
+    if (Number(productNumber.value) < product.stock) {
+      productNumber.value = Number(productNumber.value) + 1;
+    }
+  });
+}
 
 function main() {
   const searchParam = new URLSearchParams(location.search);
@@ -77,6 +101,8 @@ function main() {
   getProductInfor(productId)
     .then(renderProducts)
     .then(showProducts)
+    .then(setupQuantily)
+    .then(setupAddToCart)
     .catch(showError);
 }
 main();

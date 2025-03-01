@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+}
+/* .tenshop {
+  font-weight: 900;
+  font-size: 30px;
+} */
+.acc-button {
+  display: flex;
+  gap: 3px;
+}
+/* .header .icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.information {
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+} */
+/* .information a {
+  text-decoration: none;
+  color: black;
+}
+.information a:hover {
+  color: rgb(210, 204, 204);
+}
+  /*  */
+.header .cart,
+.header .accout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+.header .cart svg {
+  width: 24px;
+  height: 24px;
+  color: black;
+}
+.header .accout svg {
+  width: 24px;
+  height: 24px;
+  color: black;
+}

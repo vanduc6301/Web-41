@@ -1,0 +1,87 @@
+/* .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  height: max-content;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.poke{
+    background-color: greenyellow;
+}
+.poke-info{
+    background-color: ;
+} */
+/* Đặt container chính */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Định dạng khối main */
+.main {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng khối poke và poke-info */
+.poke,
+.poke-info {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nut {
+  display: flex;
+  flex-direction: column;
+}
+.poke-title {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+/* Xóa khoảng cách dư thừa cho khối đầu tiên và cuối cùng */
+.poke:first-child {
+  margin-left: 0;
+}
+.poke-info:last-child {
+  margin-right: 0;
+}
+.mute{
+    background-color: green;
+}
+/* Điều chỉnh tiêu đề và nội dung trong khối */
+.poke h2,
+.poke-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.poke .img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+.poke input,
+.poke-info div {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpine JS</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>ALPINE JS ❤️</h1>
+    <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+
+    <!-- <div class="counter">
+      <button class="decrement">-</button>
+      <span class="count">0</span>
+      <button class="increment">+</button>
+    </div> -->
+
+    <div x-data="counter">
+      <button @click="decrement">-</button>
+      <span
+        x-text="count"
+        class="count"
+        :class="showMessage && 'danger'"
+        :class="{'danger':showMessage}"
+      ></span>
+      <button @click="increment">+</button>
+
+      <p x-text="message"></p>
+
+      <p x-show="showMessage" x-html="message" x-transition.duration.5000ms></p>
+
+      <template x-if="showMessage">
+        <p x-html="message" x-transition></p>
+      </template>
+    </div>
+
+    <div x-data="{ title: 'Start Here' }">
+      <h1 x-text="title"></h1>
+      <span x-text="1 + 2"></span>
+    </div>
+
+    <div x-data="{ open: false }">
+      <button @click="open = ! open">Expands</button>
+
+      <div x-show="open" x-transition>Content...</div>
+    </div>
+
+    <form x-data @submit.prevent="console.log('Submited');">
+      <input type="text" />
+      <button>submit</button>
+    </form>
+  </body>
+</html>

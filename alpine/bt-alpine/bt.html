@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai tap alpine</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="bt.js"></script>
+    <link rel="stylesheet" href="bt.css" />
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>bai tap alpine</h1>
+    <div class="container">
+      <div class="tong" x-data="todo">
+        <form @submit.prevent="add">
+          <input x-ref="input" type="text" x-model="input" />
+          <button type="submit">Submit</button>
+          <p x-text="error" x-show="error"></p>
+        </form>
+
+        <ul>
+          <template x-for="item in items">
+            <li>
+              <input type="checkbox" x-model="item.done" />
+              <span x-text="item.text"></span>
+              <button @click="Remove(item)">Remove</button>
+            </li>
+          </template>
+        </ul>
+
+        <div>
+          <span>
+            You have
+            <span x-text="count">0</span>
+            Items
+          </span>
+          <button @click="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+
+    <div x-data="products">
+      <div x-show="loading">dang tai du lieu san pham</div>
+      <div x-clock x-show="error" style="display: none">
+        co loi xay ra khi tai du lieu san pham
+      </div>
+      <div x-text="error"></div>
+    </div>
+
+    <div x-clock x-show="!loading && !error">
+      <template x-for="product in products">
+        <div style="display: flex">
+          <img x-bind:src="product.thumbnail" alt="" width="200" height="200" />
+          <div x-text="product.title"></div>
+          <div x-text="product.price"></div>
+        </div>
+      </template>
+    </div>
+  </body>
+</html>

@@ -2,3 +2,10 @@ có 3 trạng thái
 1.loading
 2.success
 3.error
+
+
+cách check lỗi 
+1.check console
+2.thêm log vào các hàm sử lý sự kiện xem nó có chạy không 
+    - chưa gọi hàm or chưa gan link js và chưa gán sự kiện 
+3.lỗi logic thêm debugger 

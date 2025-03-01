@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canh Chua Cá</title>
+    <style>
+        .content { max-width: 600px; margin: auto; text-align: center; }
+        .btn { 
+            display: inline-block; 
+            padding: 10px 15px; 
+            margin: 10px; 
+            background: #ff6347; 
+            color: white; 
+            text-decoration: none; 
+            cursor: pointer; 
+            position: relative; 
+        }
+        .btn:hover { background: #ff4500; }
+
+        /* Tooltip (hộp thông tin nổi) */
+        .tooltip {
+            position: absolute;
+            left: 50%;
+            top: 120%;  /* Xuất hiện bên dưới nút */
+            transform: translateX(-50%);
+            width: 250px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: left;
+            border-radius: 8px;
+            display: none;
+            z-index: 1000;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tooltip::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent rgba(0, 0, 0, 0.8) transparent;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h3>CÁC MÓN CANH CHUA CÁ</h3>
+    <p>
+        Những bữa cơm ngon và đầy đủ chắc chắn sẽ chẳng thể nào thiếu được 1 tô canh nóng hổi,
+        bỏ túi ngay các cách nấu canh chua cá hấp dẫn để thực hiện và thưởng thức cùng gia đình.
+    </p>
+    <div class="chinh">
+        <a class="btn" onmouseover="loadInfo(this, 'cabasa.html')" onmouseout="hideInfo(this)">Canh chua cá basa
+            <span class="tooltip"></span>
+        </a>
+        <a class="btn" onmouseover="loadInfo(this, 'caloc.html')" onmouseout="hideInfo(this)">Canh chua cá lóc
+            <span class="tooltip"></span>
+        </a>
+        <a class="btn" onmouseover="loadInfo(this, 'cahoi.html')" onmouseout="hideInfo(this)">Canh chua cá hồi
+            <span class="tooltip"></span>
+        </a>
+        <a class="btn" onmouseover="loadInfo(this, 'cachep.html')" onmouseout="hideInfo(this)">Canh chua cá chép
+            <span class="tooltip"></span>
+        </a>
+    </div>
+</div>
+
+<script>
+    function loadInfo(element, url) {
+        let tooltip = element.querySelector(".tooltip");
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                tooltip.innerHTML = data;
+                tooltip.style.display = "block"; // Hiện tooltip
+            })
+            .catch(error => console.log("Lỗi tải trang: " + error));
+    }
+
+    function hideInfo(element) {
+        let tooltip = element.querySelector(".tooltip");
+        tooltip.style.display = "none"; // Ẩn tooltip
+    }
+</script>
+
+</body>
+</html>

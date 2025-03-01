@@ -22,6 +22,7 @@ const productError = document.querySelector(".product-list-wrapper .error");
 const productList = document.querySelector(
   ".product-list-wrapper .product-list"
 );
+const productAddcart = document.querySelector(".add-cart");
 // ham xu ly
 
 //ham render
@@ -42,10 +43,9 @@ function showError() {
   productList.style.display = "none";
 }
 
-
 /**
- * 
- * @param {GetProductResponse} data 
+ *
+ * @param {GetProductResponse} data
  */
 function renderProducts(data) {
   productLoading.style.display = "none";
@@ -56,15 +56,15 @@ function renderProducts(data) {
             <div class="product-img">
                 <img src="${p.thumbnail}" alt="${p.title}">
             </div>
-            <a href="product.html?product-id=${p.id}">
+            <a class="heading-4" href="product.html?product-id=${p.id}">
                 <h4 class="product-title">${p.title}</h4>
             </a>
             <p class="product-description">${p.description}</p>
             <div class="button" >
-                <button class="button-mua" data-product-id="${
-                  p.id
-                }">Mua </button>
-                <button class="button-xt" data-product-id="${
+                <a href="cart.html">
+                <button class="add-cart" data-product-id="${p.id}">Mua </button>
+                </a>
+                <button class="add-cart" data-product-id="${
                   p.id
                 }">Xem Thêm </button>
             </div>

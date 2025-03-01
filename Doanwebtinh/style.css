@@ -1,0 +1,195 @@
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left {
+  width: 67%;
+  margin-right: 30px;
+}
+.left_name {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.left_name_title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.left_name_icon i {
+  transform: scale(1.2);
+}
+
+.right {
+  width: 30%;
+}
+.right_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.right_item_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.right_item_info {
+  display: flex;
+  margin-top: 5px;
+}
+
+.right_item_info_des {
+  margin-right: 10px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.right_item_info_time {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.right_item img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+.left_star {
+  display: flex;
+  margin-top: 10px;
+}
+
+.left_star_icon {
+  margin-right: 20px;
+}
+
+.left_heart {
+  margin-right: 20px;
+}
+
+.left_star_icon i {
+  color: #ffa636;
+  transform: scale(0.8);
+}
+
+.left_author {
+  margin-top: 10px;
+  display: flex;
+}
+
+.left_author_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #9575cd;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.left_author_name__main {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.left_author_name__des {
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.left_des {
+  opacity: 0.8;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  line-height: 1.5;
+}
+.left_ig {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.left_ig_name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left_ig_info {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.left_dir {
+  margin-top: 15px;
+}
+
+.left_dir_title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.left_dir_item {
+  margin-top: 15px;
+}
+
+.left_dir_item_name {
+  font-size: 14px;
+}
+
+.left_dir_item_img {
+  margin-top: 8px;
+}
+
+.left_dir_item_img img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.left_comment_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.left_comment {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.left_comment_input {
+  position: relative;
+}
+.left_comment_input i {
+  position: absolute;
+}
+.left_comment_input input {
+  width: 550px;
+  height: 48px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 0px 10px;
+}
+.left_comment_btn {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: orangered;
+  line-height: 50px;
+  /* padding: 10px; */
+  cursor: pointer;
+}

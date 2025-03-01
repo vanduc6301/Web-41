@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Inter, sans-serif;
+  /* overflow: hidden; thanh cuon */
+}
+.container {
+  max-width: 1057px;
+  margin-inline: auto;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 146px;
+  margin-bottom: 80px;
+}
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43px;
+  margin-bottom: 16px;
+}
+.description {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 22px;
+}
+.cart-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.cart-lessons {
+  width: 331px;
+  height: 366px;
+}
+.cart-info {
+  padding-top: 16px;
+}
+.cart-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.8px;
+  letter-spacing: -0.5px;
+  margin-bottom: 9px;
+  text-transform: none;
+}
+.cart-time {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+}
+.cart-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.8px;
+  margin-bottom: 16px;
+}

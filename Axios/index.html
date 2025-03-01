@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery.js"></script>
+    <script src="pagination.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="heading">
+        <div class="title-heading">
+          <h2 class="title-1">Pokedéx</h2>
+          <div class="title-2">Tìm pokemon yêu thích</div>
+        </div>
+        <div class="search-container">
+          <input
+            type="text"
+            name="search"
+            placeholder="Tìm pokemon của bạn ... "
+            class="search-input"
+          />
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="pokemon">
+          <div class="poke-list">
+            <a class="pokemon-2" href="#">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a class="pokemon-2">
+              <div class="infor">
+                <div class="index"># 001</div>
+                <div class="name">Bulbasaur</div>
+                <div class="type" style="display: flex; gap: 10px">
+                  <div class="type-1">grass</div>
+                  <div class="type-2">poison</div>
+                </div>
+              </div>
+              <div class="poke-image">
+                <img
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <div class="pagination"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
