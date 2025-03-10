@@ -1,4 +1,4 @@
-import { Product } from "../types/product";
+import { Product } from "../types/products";
 
 interface ProductCardProps {
   products: Product[];
@@ -13,7 +13,6 @@ function ProductCard({ products }: ProductCardProps) {
           <h3>{product.title}</h3>
           <p>{product.description}</p>
           <p>Giá: ${product.price}</p>
-          
         </div>
       ))}
     </div>
