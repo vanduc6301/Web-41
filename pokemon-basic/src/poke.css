@@ -5,7 +5,6 @@
 }
 
 .container {
-  max-width: auto;
   padding: 40px;
 }
 .header {
@@ -14,18 +13,15 @@
   padding-bottom: 20px;
 }
 .search-box {
-  position: relative;
+  display: flex;
+  align-items: center;
   width: 450px; /* Điều chỉnh độ rộng của input */
 }
 
-.search-box svg {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  color: gray;
+svg {
+  color: #555;
+  margin-right: -25px;
+  z-index: 1;
 }
 
 .search-box input {
@@ -44,7 +40,7 @@
 }
 
 .cart {
-  width: 300px; /* Điều chỉnh kích thước thẻ */
+  width: 350px; /* Điều chỉnh kích thước thẻ */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -55,12 +51,13 @@
   border: 2px solid #f0f0f0;
   justify-content: space-between;
   transition: transform 0.3s ease-in-out;
-  background-color: rgb(212, 231, 185);
+  background-image: url("public/pokemon-card.svg");
+  background-color: green;
 }
 .cart-list {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .serialNumber {
@@ -74,23 +71,18 @@
   color: #fff;
 }
 
-.type1,
-.type2 {
+.type {
+  display: flex;
   padding: 5px 10px;
   border: none;
-  border-radius: 5px;
   color: white;
-  cursor: pointer;
 }
 
-.type1 {
+.type {
   background-color: rgb(112, 142, 66); /* Màu đại diện cho hệ đầu tiên */
   margin-right: 10px;
 }
 
-.type2 {
-  background-color: #a235c3; /* Màu đại diện cho hệ thứ hai */
-}
 .title {
   display: flex;
   flex-direction: column;
